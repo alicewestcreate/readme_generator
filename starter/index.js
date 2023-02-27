@@ -4,19 +4,6 @@ const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-
-// array of questions for user
-// const questions = [ 
-// ["title", "Project Title:"], 
-// ["description", "Project Description"], 
-// ["installation" , "Installation Process"], 
-// ["usage", "Usage"], 
-// ["contributing", "Contributing"], 
-// ["test", "Test"], 
-// ["questions", "questions"],
-// ];
-
-
 inquirer.prompt([
     {
         name: "title",
@@ -45,26 +32,26 @@ inquirer.prompt([
     {
         name: "contributing",
         type: "input",
-        message: "",
+        message: "Outline how best to contribute",
     },
 
-    {
-        name: "test",
-        type: "input",
-        message: "Test",
-    },
 
     {
         name: "license",
         type: "list",
-        message: "Select which license",
-        choices: ["License: MPL 2.0", "Documentation", "Website shields.io"]
+        message: "Select a license",
+        choices: ["The MIT License", "GNU GPL v3", "Apache 2.0 License", "BSD 3-Clause License", "License: MPL 2.0", "Documentation", "Website shields.io"]
     },
 
     {
-        name: "questions",
+        name: "gitAccount",
         type: "input",
-        message: "Questions",
+        message: "Enter your GitHub username",
+    },
+    {
+        name: "email",
+        type: "input",
+        message: "Enter your email address?",
     },
 
 ]).then(answers => {
@@ -72,34 +59,13 @@ inquirer.prompt([
 
     const template = generateMarkdown(answers)
     
-    fs.writeFile(`${answers.title}.md`, template, (error) =>
+    fs.writeFile(`README1.md`, template, (error) =>
     error ? console.error(error) : console.log("Success")
     );
 
 })
 
 
-
-
-// questions.forEach(question => {
-//     console.log("Array of question",question);
-
-// inquirer
-//     .prompt(
-//         questions.forEach(question => {
-//             [{name: question[0], type: "input", message: question[1],},]
-//             } 
-//             )).then((answers) => {
-//             console.log(answers);
-//             const template = generateMarkdown(answers.question[0])
-
-//             // fs.writeFile(`${answers.title}.md`, template, (error) =>
-//             // error ? console.error(error) : console.log("Success")
-//             // );
-//     })
-
-
-// // })
 
 
 
