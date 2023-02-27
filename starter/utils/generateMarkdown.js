@@ -5,4 +5,6 @@ function generateMarkdown(data) {
 `;
 }
 
+console.log("markdown");
+
 module.exports = generateMarkdown;
