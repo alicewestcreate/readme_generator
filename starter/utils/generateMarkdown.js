@@ -49,7 +49,7 @@ ${data.description} \n
 [Question](#question)
 
 
-## Installation
+## Installation Process
 --- 
 ${data.installation} \n
 
@@ -61,7 +61,7 @@ ${data.usage} \n
 
 
 
-## Contributing
+## Contributing Guidelines
 --- 
 ${data.contributing}
 
@@ -69,10 +69,11 @@ ${data.contributing}
 
 ## License
 -- 
+${(data.license)} 
 
 
 
-## Test
+## Test Instructions
 --- 
 ${data.test} \n
 
@@ -81,12 +82,13 @@ ${data.test} \n
 ## Question
 --- 
 
-### Best way to contact: 
-Throught GitHub
+### Contact
+Contract me on GITHUB throught my acount, 
 [${data.gitAccount}](https://github.com/${data.gitAccount}) \n
 Or directly on email: 
 [email address](${data.email}) \n
 
+Thanks,
 
 `;
 }
