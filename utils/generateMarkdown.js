@@ -1,7 +1,5 @@
 // function to generate markdown for README
 
-
-
 function getLicenseBadge(license){
 
   switch (license) {
@@ -49,7 +47,7 @@ ${data.description} \n
 [Question](#question)
 
 
-## Installation Process
+## Installation
 --- 
 ${data.installation} \n
 
@@ -61,7 +59,7 @@ ${data.usage} \n
 
 
 
-## Contributing Guidelines
+## Contributing
 --- 
 ${data.contributing}
 
@@ -73,7 +71,7 @@ ${(data.license)}
 
 
 
-## Test Instructions
+## Test
 --- 
 ${data.test} \n
 
