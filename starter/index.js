@@ -8,50 +8,50 @@ inquirer.prompt([
     {
         name: "title",
         type: "input",
-        message: "Project Title:",
+        message: "What is your project title:",
     },
 
     {
         name: "description",
         type: "input",
-        message: "Project Description:",
+        message: "Give a description of your project:",
     },
 
     {
         name: "installation",
         type: "input",
-        message: "Installation Process:",
+        message: "What are the installation processes:",
     },
 
     {
         name: "usage",
         type: "input",
-        message: "Your Usage:",
+        message: "What is the usage for this project:",
     },
 
     {
         name: "contributing",
         type: "input",
-        message: "Outline how best to contribute",
+        message: "Outline how best way to contribute to the project",
     },
 
 
     {
         name: "license",
         type: "list",
-        message: "Select a license",
+        message: "Select the license for the project",
         choices: ["The MIT License", "GNU GPL v3", "Apache 2.0 License", "BSD 3-Clause License", "License: MPL 2.0", "Documentation", "Website shields.io"]
     },
 
     {
         name: "gitAccount",
         type: "input",
-        message: "Enter your GitHub username",
+        message: "Enter your GitHub username for contact",
     },
     {
         name: "email",
         type: "input",
-        message: "Enter your email address?",
+        message: "Enter your email address from contact",
     },
 
 ]).then(answers => {
