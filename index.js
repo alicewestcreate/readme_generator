@@ -1,9 +1,12 @@
+// Create variable for file system (fs), path, and the inquirer npm. 
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
+// A variable that connects this script with generatemarkdown script. 
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
+// Using the inqurier.prompt method, ask a series of questions and store the responses in an object. 
 inquirer.prompt([
     {
         name: "title",
@@ -44,6 +47,14 @@ inquirer.prompt([
     },
 
     {
+        name: "test",
+        type: "input",
+        message: "Enter information for testing",
+    },
+
+    
+
+    {
         name: "gitAccount",
         type: "input",
         message: "Enter your GitHub username for contact",
@@ -54,32 +65,18 @@ inquirer.prompt([
         message: "Enter your email address from contact",
     },
 
+// Once completed, then complete this next command. 
 ]).then(answers => {
-    console.log(answers);
-
+    // Call the function with the answers as an argument. 
     const template = generateMarkdown(answers)
-    
-    fs.writeFile(`README1.md`, template, (error) =>
-    error ? console.error(error) : console.log("Success")
-    );
+    writeToFile(template) 
 
 })
 
 
-
-
-
-
-
-
-// // function to write README file
-// function writeToFile(data) {
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
+function writeToFile(template) {
+    // With information stored in template varible, write a file, log error if error is true and occurs, else log success. 
+    fs.writeFile(`README1.md`, template, (error) =>
+    error ? console.error(error) : console.log("Success")
+    );
+}
