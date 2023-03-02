@@ -1,12 +1,12 @@
 
 
-# ReadMe Generator [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+# test [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
 
 
 ## Description
 --- 
-This is a program that helps write sophisticated readme files in moments.  
+test 
 
 
 ## Table Of Contents
@@ -20,35 +20,33 @@ This is a program that helps write sophisticated readme files in moments.
 
 ## Installation
 --- 
-
-For installation please watch this walk through video. 
-[Walk Through](https://drive.google.com/file/d/1_WpP2cT5gJoOPFxe6XO47Avsj2PjtzK-/view)
+test 
 
 
 
 
 ## Usage
 --- 
-Best for writing read me's for simple projects.  
+test 
 
 
 
 
 ## Contributing
 --- 
-Expand on user experierence.
+test
 
 
 
 ## License
 -- 
-The MIT License 
+GNU GPL v3 
 
 
 
 ## Testing
 --- 
-no testing 
+test 
 
 
 
